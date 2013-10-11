@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ManETS</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_playList">Playlist</string>
+    <string name="action_addPlayList">Add to playlist</string>
+    <string name="action_removePlayList">Remove from playlist</string>
+    
+    <string name="pref_port">Port preferences</string>
+    <string name="pref_port_summ">Summary port preferences</string>
+    
+    <string name="text_view_URL">Please insert the URL :</string>
+    <string name="text_field_URL">10.1.1.183:8080/gti785-manets-server/</string>
+    <string name="ok">OK</string>
+    
+    <string name="lblArtist">Artist :</string>
+    <string name="lblAlbum">Album :</string>
+    <string name="lblTitle">Title :</string>
+    <string name="lblGenre">Genre :</string>
+    <string name="tbd">TBD</string>
+    <string name="previous">Previous</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="next">Next</string>
+    <string name="stream">Stream</string>
+
+</resources>

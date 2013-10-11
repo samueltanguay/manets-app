@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/lblArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblArtist"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"  />
+    <TextView
+        android:id="@+id/textViewArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tbd"
+        android:textSize="20sp" 
+        android:paddingLeft="100sp" />
+    
+    <TextView
+        android:id="@+id/lblAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblAlbum"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:paddingTop="50sp" />
+    <TextView
+        android:id="@+id/textViewAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tbd"
+        android:textSize="20sp"
+        android:paddingLeft="100sp"
+        android:paddingTop="50sp" />
+    
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTitle"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:paddingTop="100sp"
+         />
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tbd"
+        android:textSize="20sp"
+        android:paddingLeft="100sp"
+        android:paddingTop="100sp" />
+    
+    <TextView
+        android:id="@+id/lblGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblGenre"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:paddingTop="150sp"
+         />
+
+    <TextView
+        android:id="@+id/textViewGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100sp"
+        android:paddingTop="150sp"
+        android:text="@string/tbd"
+        android:textSize="20sp" />
+    
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="375dp" />
+    
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/previous"
+        android:layout_alignParentBottom = "true" />
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/stop"
+        android:layout_alignParentBottom = "true" 
+        android:layout_marginLeft="100dp"  />
+    <Button
+        android:id="@+id/buttonStream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/stream"
+        android:layout_alignParentBottom = "true" 
+        android:layout_marginLeft="168dp"   />
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/next"
+        android:layout_alignParentBottom = "true" 
+        android:layout_alignParentRight = "true"/> 
+</RelativeLayout>

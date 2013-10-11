@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference
+		 android:key="pref_port"
+		 android:defaultValue="8080" />
+    
+    <EditTextPreference
+		 android:key="pref_IP"
+		 android:defaultValue="127.0.0.1" />
+    
+    <EditTextPreference
+		 android:key="pref_root_path"
+		 android:defaultValue="/gti785-manets-server/" />
+
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item
+    android:id="@+id/action_settings"
+    android:title="@string/action_settings"/>    
+
+    <item
+    android:id="@+id/action_playList"
+    android:title="@string/action_playList"/>
+    
+    <item
+    android:id="@+id/action_addPlayList"
+    android:title="@string/action_addPlayList"/>
+    
+    <item
+    android:id="@+id/action_removePlayList"
+    android:title="@string/action_removePlayList"/>
+        
+</menu>
