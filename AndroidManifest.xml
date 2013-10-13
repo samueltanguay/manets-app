@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.gti.gti785_manets_app.MainActivity"
+            android:name="ca.etsmtl.gti785.view.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,13 +25,13 @@
         </activity>
         
         <activity
-            android:name="com.gti.gti785_manets_app.MusicListActivity"
+            android:name="ca.etsmtl.gti785.view.MusicListActivity"
             android:label="@string/app_name" >
 
         </activity>
         
         <activity
-            android:name="com.gti.gti785_manets_app.PlayerActivity"
+            android:name="ca.etsmtl.gti785.view.PlayerActivity"
             android:label="@string/app_name" >
 
         </activity>

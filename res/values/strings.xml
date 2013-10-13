@@ -11,7 +11,7 @@
     <string name="pref_port_summ">Summary port preferences</string>
     
     <string name="text_view_URL">Please insert the URL :</string>
-    <string name="text_field_URL">10.1.1.183:8080/gti785-manets-server/</string>
+    <string name="text_field_URL">10.192.168.52:8080/gti785-manets-server/</string>
     <string name="ok">OK</string>
     
     <string name="lblArtist">Artist :</string>
