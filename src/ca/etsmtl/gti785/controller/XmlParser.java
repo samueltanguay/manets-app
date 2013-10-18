@@ -3,19 +3,29 @@ package ca.etsmtl.gti785.controller;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import ca.etsmtl.gti785.model.Song;
+import ca.etsmtl.gti785.model.Songs;
 
+/**
+ *	The XML parser receives the XML responses from the web server
+ *  and convert in a Songs object.
+ * 	@author Samuel
+ */
 public class XmlParser 
 {
 	private static volatile XmlParser instance = null;
 	
 	
+	/**
+	 * Implementation of the singleton pattern
+	 * Return the instance of the parser
+	 * @return The instance
+	 */
 	public static XmlParser getInstance()
 	{
 		if (instance == null) 
@@ -31,9 +41,16 @@ public class XmlParser
 	    return instance;
 	}
 	
-	public List<Song> getSongs(String httpData) throws XmlPullParserException, IOException
+	/**
+	 * Build the list of the songs from the XML response of the server
+	 * @param httpData The response from the server in XML
+	 * @return The songs obtained
+	 * @throws XmlPullParserException
+	 * @throws IOException
+	 */
+	public Songs getSongs(String httpData) throws XmlPullParserException, IOException
 	{
-		List<Song> songs = new ArrayList<Song>();
+		ArrayList<Song> songs = new ArrayList<Song>();
 		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
         factory.setNamespaceAware(true);
         XmlPullParser xpp = factory.newPullParser();
@@ -61,7 +78,7 @@ public class XmlParser
         	if(eventType == XmlPullParser.START_TAG && xpp.getName().equals("path"))
         		tagName = xpp.getName();
         	if(eventType == XmlPullParser.TEXT && tagName.equals("id") && xpp.getText().trim().equals("") == false)
-        		song.setId(Integer.parseInt(xpp.getText()));
+        		song.setId(xpp.getText());
         	if(eventType == XmlPullParser.TEXT && tagName.equals("artist") && xpp.getText().trim().equals("") == false)
         		song.setArtist(xpp.getText());
         	if(eventType == XmlPullParser.TEXT && tagName.equals("title") && xpp.getText().trim().equals("") == false)
@@ -74,7 +91,7 @@ public class XmlParser
         	eventType = xpp.next();
         }
         
-		return songs;
+		return new Songs(songs);
 	}
 
 }

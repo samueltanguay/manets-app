@@ -25,28 +25,24 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout1=0x7f090000;
-        public static final int action_addPlayList=0x7f090016;
-        public static final int action_playList=0x7f090015;
-        public static final int action_playListMusic=0x7f090012;
-        public static final int action_removePlayList=0x7f090017;
-        public static final int action_settings=0x7f090014;
-        public static final int action_settingsMusic=0x7f090013;
-        public static final int buttonNext=0x7f090011;
-        public static final int buttonPlay=0x7f09000f;
-        public static final int buttonPrevious=0x7f09000e;
-        public static final int buttonStream=0x7f090010;
+        public static final int action_addPlayList=0x7f090012;
+        public static final int action_delete_playlist=0x7f090010;
+        public static final int action_music=0x7f09000e;
+        public static final int action_playList=0x7f09000f;
+        public static final int action_removePlayList=0x7f090013;
+        public static final int action_settings=0x7f090011;
+        public static final int action_settingsMusic=0x7f09000d;
+        public static final int buttonNext=0x7f09000c;
+        public static final int buttonPlay=0x7f09000a;
+        public static final int buttonPrevious=0x7f090009;
+        public static final int buttonStream=0x7f09000b;
         public static final int buttonURL=0x7f090003;
         public static final int editTextURL=0x7f090002;
-        public static final int lblAlbum=0x7f090007;
         public static final int lblArtist=0x7f090005;
-        public static final int lblGenre=0x7f09000b;
-        public static final int lblTitle=0x7f090009;
+        public static final int lblTitle=0x7f090007;
         public static final int listViewMusic=0x7f090004;
-        public static final int seekBar=0x7f09000d;
-        public static final int textViewAlbum=0x7f090008;
         public static final int textViewArtist=0x7f090006;
-        public static final int textViewGenre=0x7f09000c;
-        public static final int textViewTitle=0x7f09000a;
+        public static final int textViewTitle=0x7f090008;
         public static final int textViewURL=0x7f090001;
     }
     public static final class layout {
@@ -60,26 +56,26 @@ public final class R {
         public static final int player=0x7f080002;
     }
     public static final class string {
-        public static final int action_addPlayList=0x7f060003;
-        public static final int action_playList=0x7f060002;
-        public static final int action_removePlayList=0x7f060004;
+        public static final int action_addPlayList=0x7f060005;
+        public static final int action_delete_playList=0x7f060004;
+        public static final int action_music=0x7f060002;
+        public static final int action_playList=0x7f060003;
+        public static final int action_removePlayList=0x7f060006;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int lblAlbum=0x7f06000b;
-        public static final int lblArtist=0x7f06000a;
-        public static final int lblGenre=0x7f06000d;
-        public static final int lblTitle=0x7f06000c;
+        public static final int lblArtist=0x7f06000c;
+        public static final int lblTitle=0x7f06000d;
         public static final int next=0x7f060012;
-        public static final int ok=0x7f060009;
+        public static final int ok=0x7f06000b;
         public static final int play=0x7f060010;
-        public static final int pref_port=0x7f060005;
-        public static final int pref_port_summ=0x7f060006;
+        public static final int pref_port=0x7f060007;
+        public static final int pref_port_summ=0x7f060008;
         public static final int previous=0x7f06000f;
         public static final int stop=0x7f060011;
         public static final int stream=0x7f060013;
         public static final int tbd=0x7f06000e;
-        public static final int text_field_URL=0x7f060008;
-        public static final int text_view_URL=0x7f060007;
+        public static final int text_field_URL=0x7f06000a;
+        public static final int text_view_URL=0x7f060009;
     }
     public static final class style {
         /** 

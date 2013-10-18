@@ -13,9 +13,17 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ *	This class is starting point of the application.
+ *  It gets the server informations from the user.
+ * 	@author Samuel
+ */
 public class MainActivity extends Activity 
 {
 
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
@@ -42,6 +50,12 @@ public class MainActivity extends Activity
 	    });
 	}
 	
+	/**
+	 * Set the preferences from the user input
+	 * @param serverIP The server's IP
+	 * @param serverPort The server's port
+	 * @param serverRootPath The first part of the path required for every URL
+	 */
 	private void setPreferences(String serverIP, String serverPort, String serverRootPath)
 	{
 		//http://stackoverflow.com/questions/552070/android-how-do-i-set-a-preference-in-code
@@ -55,6 +69,9 @@ public class MainActivity extends Activity
 		editor.commit();
 	}
 
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) 
 	{
